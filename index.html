@@ -1,1 +1,105 @@
-Convert a NPR news feed for offline listening with options for speed up and timed playlist
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Water Moccasin: Convert a NPR ONE news feed for offline listening</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Reich">
+    <meta name="description"
+        content="Convert a NPR ONE news feed for offline listening with options for speed up and timed playlist">
+    <meta name="robots" content="all">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--[if lt IE 9]>
+	<script src="script/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="eight column" style="margin-top: 5%">
+                <img src='https://avatars1.githubusercontent.com/u/56797950?s=200&v=4'/>
+                <h1>Water Moccasin</h1>
+
+                <p>Convert a NPR ONE news feed for offline listening with options for speed up and timed playlist</p>
+                <p>LICENSE: <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="nofollow">CC By
+                        SA</a> <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt" rel="nofollow">in
+                        Plain Text</a></p>
+                <h2><a id="user-content-why" class="anchor" aria-hidden="true" href="#why"><svg
+                            class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                            </path>
+                        </svg></a>Why</h2>
+                <ul>
+                    <li>Named after snakes who swim on top of the water.</li>
+                    <li>Running out the door w/the latest news and swimming laps w/an mp3 player.</li>
+                    <li>Change to give back and <a href="https://paypal.me/teachingstudent" rel="nofollow">money for
+                            coffee</a> or
+                        <a href="https://github.com/sponsors/alexreich">sponsor me on github</a>.</li>
+                </ul>
+                <h2><a id="user-content-features" class="anchor" aria-hidden="true" href="#features"><svg
+                            class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                            </path>
+                        </svg></a>Features</h2>
+                <ul>
+                    <li>Grabs NPR feed for offline listening</li>
+                    <li>Option to speed up playback for any device</li>
+                    <li>Will obtain a playlist by length (even if sped up)</li>
+                </ul>
+                <h2><a id="user-content-useage" class="anchor" aria-hidden="true" href="#useage"><svg
+                            class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                            </path>
+                        </svg></a>Useage</h2>
+                <p><code>watermoccasin.py [-h] [-w [WORKOUT]] [-s [SPEEDUP]] [-l [{DEBUG,INFO,WARNING,ERROR,CRITICAL}]] [-v] media</code>
+                </p>
+                <h2><a id="user-content-how-do-i-use-it" class="anchor" aria-hidden="true" href="#how-do-i-use-it"><svg
+                            class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                            </path>
+                        </svg></a>How do I use it?</h2>
+                <p><code>watermoccasin d:\ -s 1.85 -w 45</code></p>
+                <h2><a id="user-content-installation" class="anchor" aria-hidden="true" href="#installation"><svg
+                            class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                            </path>
+                        </svg></a>Installation</h2>
+                <ol>
+                    <li>Obtain an <a href="https://dev.npr.org/" rel="nofollow">NPR developer account</a>.</li>
+                    <li>Create an <a href="https://dev.npr.org/console" rel="nofollow">application</a> to use.</li>
+                    <li>Copy the "Application ID &amp; Secret" for use later in the app.</li>
+                    <li><code>pip install watermoccasin</code>.</li>
+                    <li>Ensure <a href="https://www.ffmpeg.org/download.html" rel="nofollow">ffmpeg</a> is in the path.
+                    </li>
+                    <li>The first time, you will be required to set up your NPR account, follow the instructions.</li>
+                    <li>Test with you your local temp directory or removable drive.</li>
+                </ol>
+                <p>Note: The destination directory is cleared of previous media.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
